@@ -1,0 +1,165 @@
+@font-face { font-family: ProximaNova; 
+    src: url('../assets/ProximaNovaRegular.otf');
+   } 
+
+@font-face { font-family: ProximaNovaSemiBold; 
+src: url('../assets/ProximaNovaSemibold.otf');
+}
+
+body {
+    font-family: "ProximaNova", sans-serif !important;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "ProximaNova", sans-serif !important;
+
+    color: #2F2E41;
+}
+
+p {
+    font-family: "ProximaNova", sans-serif !important;
+
+    color: #2F2E41;
+}
+
+#fullpage {
+    padding-bottom: 100px;
+}
+
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.header-container .container {
+    background: white;
+}
+
+/* .header-container.mobile {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+} */
+
+.nav-link {
+    color: #2F2E41;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+}
+
+.nav-link:hover {
+    color: #4790FF;
+}
+
+.header {
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.header.open {
+    height: 250px;
+}
+
+.header .menu-btn {
+    color: #2f2e41;
+    font-size: 23px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.section {
+    background: white;
+    padding: 0px 35px;
+    /* border-bottom: 1px solid #d2d2d2; */
+}
+
+.section.top-section {
+    padding-top: 140px;
+}
+
+/* .section1 {
+    margin-bottom: 35vh;
+} */
+
+/* .section2 {
+    margin-bottom: 100px;
+} */
+
+.section1 .coworking-col-img img, .section2 .coworking-col-img img {
+    max-width: 550px;
+    width: 100%;
+}
+
+.section1 .coworking-col-desc .main-text, .section2 .coworking-col-desc .main-text {
+    font-size: 55px;
+}
+
+.section1 .coworking-col-desc .sub-text, .section2 .coworking-col-desc .sub-text {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+    padding: 20px 0 20px 0;
+    font-family: "ProximaNovaSemiBold", sans-serif !important;
+}
+
+.schd-button {
+    display: inline-flex;
+    background: none;
+    min-width: 250px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #292B2D;
+    border-radius: 2px;
+    cursor: pointer;
+    user-select: none;
+    padding: 20px 30px;
+
+    transition: all 0.1s ease-out;
+}
+
+.schd-button .text {
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.schd-button.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.schd-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.schd-button:hover {
+    color: #2962FF;
+    border-color: #2962FF;
+}
+
+@media(max-width: 1000px) {
+    .header .logo {
+        max-width: 200px;
+    }
+
+    .header-container.mobile {
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media(max-width: 768px) {
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .section1 .coworking-col-desc .main-text, .section2 .coworking-col-desc .main-text {
+        font-size: 45px;
+    }
+}
+
+@media(max-width: 576px) {
+    .header {
+        height: 70px;
+    }
+}
