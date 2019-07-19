@@ -32,6 +32,8 @@ p {
     left: 0;
     right: 0;
     z-index: 100;
+    padding-top: 30px;
+    background: white;
 }
 
 .header-container .container {
@@ -136,6 +138,30 @@ p {
 .schd-button:hover {
     color: #2962FF;
     border-color: #2962FF;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+
+    background: #F5F9FC;
+
+    padding: 0px 110px;
+
+    color: #0A2240;
+}
+
+.footer .row {
+    width: 100%;
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
 }
 
 @media(max-width: 1000px) {
