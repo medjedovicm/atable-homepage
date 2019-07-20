@@ -26,6 +26,20 @@ p {
     padding-bottom: 100px;
 }
 
+.brand-anchor {
+    color: #0066FF !important;
+    font-family: "ProximaNovaSemiBold", sans-serif;
+    text-decoration: none !important;
+    display: inline-flex;
+    align-items: center;
+}
+
+.brand-anchor img {
+    margin-left: 10px;
+
+    transition: all 0.2s ease-out;
+}
+
 .header-container {
     position: fixed;
     top: 0;
@@ -46,12 +60,19 @@ p {
 
 .nav-link {
     color: #2F2E41;
-    font-size: 22px;
+    font-size: 16px;
     letter-spacing: 0.04em;
 }
 
 .nav-link:hover {
     color: #4790FF;
+}
+
+.nav-link.login {
+    background: #0066FF;
+    border-radius: 6px;
+    color: white;
+    padding: 5px 30px;
 }
 
 .header {
@@ -80,21 +101,63 @@ p {
     padding-top: 140px;
 }
 
-/* .section1 {
-    margin-bottom: 35vh;
-} */
-
-/* .section2 {
-    margin-bottom: 100px;
-} */
-
-.section1 .coworking-col-img img, .section2 .coworking-col-img img {
+.col-img img {
     max-width: 550px;
     width: 100%;
 }
 
-.section1 .coworking-col-desc .main-text, .section2 .coworking-col-desc .main-text {
-    font-size: 55px;
+.col-desc .main-text {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.learn-more-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    margin-top: 20px;
+
+    padding: 15px 20px;
+    /* box-shadow: 0 0 4px 0px #0000006b; */
+    /* box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.64); */
+    /* border: 1px solid rgba(0, 0, 0, 0.37); */
+
+    overflow: hidden;
+    border-radius: 6px;
+
+    transition: all 0.2s ease-in;
+
+    opacity: 0;
+}
+
+.learn-more-box.tip1 {
+    box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.64);
+}
+
+.learn-more-box.tip2 {
+    border: 1px solid rgba(0, 0, 0, 0.37);
+}
+
+.learn-more-box.tip3 {
+    border-top: 1px solid #0000003d;
+    border-radius: 0;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.learn-more-box.opened {
+    opacity: 1;
+}
+
+.learn-more-box p {
+    margin: 0;
+}
+
+.brand-anchor .arrow-rotate-bottom {
+    image-rendering: pixelated;
+    transform: rotate(90deg);
 }
 
 .section1 .coworking-col-desc .sub-text, .section2 .coworking-col-desc .sub-text {
@@ -148,10 +211,9 @@ p {
     width: 100%;
     height: 100px;
 
-    background: #F5F9FC;
+    /* background: #F5F9FC; */
 
-    /* padding: 0px 110px; */
-
+    border-top: 1px solid rgba(0, 0, 0, 0.12156862745098039);
     color: #0A2240;
 }
 

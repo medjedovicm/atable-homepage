@@ -47,7 +47,7 @@
                         <a href="#" class="nav-link">Features</a>
                         <a href="#" class="nav-link">Blog</a>
                         <a href="https://scheduler-angular.herokuapp.com/login" class="nav-link login">
-                            <i class="fas fa-user"></i>
+                            <!-- <i class="fas fa-user"></i> -->
                             Sign In
                         </a>
                     </div>
@@ -72,19 +72,33 @@
         <div id="topSection" class="section">
             <div class="container">
                 <div class="section1">
-                    <div class="row justify-content-between flex-column flex-lg-row">
-                        <div class="col coworking-col-desc">
+                    <div class="row align-items-center justify-content-between flex-column flex-lg-row">
+                        <div class="col-6 col-desc">
                             <h1 class="main-text">Schedule coworking session</h1>
     
                             <p class="sub-text">Never again ask friends when they can, see it on board and schedule right away!</p>
     
-                            <button class="schd-button d-none d-lg-block read-more">read more</button>
+                            <!-- <button class="schd-button d-none d-lg-block read-more">read more</button> -->
+                            <a href="#" id="coworkingDetails" class="brand-anchor">
+                                LEARN MORE
+                                <img draggable="false" src="./assets/arrow-right.png">
+                            </a>
+
+                            <div id="coworkingBox" class="learn-more-box tip1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis lectus felis, eget volutpat metus dapibus lobortis. Morbi sagittis nulla.</p>
+                            </div>
                         </div>
-                        <div class="col coworking-col-img d-flex d-lg-block justify-content-center">
+
+                        <div class="col-6 col-img d-flex d-lg-block justify-content-center">
                             <img src="./assets/coworking.png" draggable="false" alt="coworking session">
                         </div>
+
                         <div class="col d-flex d-lg-none justify-content-center mt-5">
-                            <button class="schd-button read-more">read more</button>
+                            <!-- <button class="schd-button read-more">read more</button> -->
+                            <a href="#" class="brand-anchor">
+                                LEARN MORE
+                                <img draggable="false" src="./assets/arrow-right.png">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -95,18 +109,66 @@
             <div class="container">
                 <div class="section2">
                     <div class="row align-items-center justify-content-between flex-column flex-lg-row">
-                        <div class="col coworking-col-img d-flex d-lg-block justify-content-center mb-5 mb-lg-0">
+                        <div class="col-5 col-img d-flex d-lg-block justify-content-center mb-5 mb-lg-0">
                             <img src="./assets/prediction.png" draggable="false" alt="coworking session">
                         </div>
-                        <div class="col coworking-col-desc">
+                        <div class="col-7 col-desc">
                             <h1 class="main-text">Smart task time prediction</h1>
         
                             <p class="sub-text">AI powered task time estimation. Know how long it takes so you don’t get fooled by workers.</p>
 
-                            <button class="schd-button d-none d-lg-block">read more</button>
+                            <!-- <button class="schd-button d-none d-lg-block">read more</button> -->
+                            <a href="#" id="predictionDetails" class="brand-anchor">
+                                LEARN MORE
+                                <img draggable="false" src="./assets/arrow-right.png">
+                            </a>
+
+                            <div id="predictionBox" class="learn-more-box tip2">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis lectus felis, eget volutpat metus dapibus lobortis. Morbi sagittis nulla.</p>
+                            </div>
                         </div>
                         <div class="col d-flex d-lg-none justify-content-center">
-                            <button class="schd-button">read more</button>
+                            <!-- <button class="schd-button">read more</button> -->
+                            <a href="#" class="brand-anchor">
+                                LEARN MORE
+                                <img draggable="false" src="./assets/arrow-right.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 180px" class="section">
+            <div class="container">
+                <div class="section3">
+                    <div class="row align-items-center justify-content-between flex-column flex-lg-row">
+                        <div class="col-7 col-desc">
+                            <h1 class="main-text">Real-Time chat and activity tracker</h1>
+    
+                            <p class="sub-text">AI powered task time estimation. Know how long it takes so you don’t get fooled by workers.</p>
+    
+                            <!-- <button class="schd-button d-none d-lg-block read-more">read more</button> -->
+                            <a href="#" id="chatDetails" class="brand-anchor">
+                                LEARN MORE
+                                <img draggable="false" src="./assets/arrow-right.png">
+                            </a>
+
+                            <div id="chatBox" class="learn-more-box tip3">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis lectus felis, eget volutpat metus dapibus lobortis. Morbi sagittis nulla.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-5 col-img d-flex d-lg-block justify-content-center">
+                            <img src="./assets/chat.png" draggable="false" alt="coworking session">
+                        </div>
+
+                        <div class="col d-flex d-lg-none justify-content-center mt-5">
+                            <!-- <button class="schd-button read-more">read more</button> -->
+                            <a href="#" class="brand-anchor">
+                                LEARN MORE
+                                <img draggable="false" src="./assets/arrow-right.png">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -118,7 +180,7 @@
                         <div class="col-3">
                             © 2019 Scheduler
                         </div>
-
+        
                         <div class="col-9 d-flex justify-content-around align-items-center">
                             <a href="#">Why Scheduler</a>
                             <a href="#">Features</a>

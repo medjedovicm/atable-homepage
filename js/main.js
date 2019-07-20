@@ -27,4 +27,22 @@ $(document).ready(function() {
     $('.read-more').click(function() {
         fullpage_api.moveSectionDown();
     });
+
+    $('#coworkingDetails').click(function() {
+        $('#coworkingDetails img').toggleClass('arrow-rotate-bottom');
+        
+        $('#coworkingBox').toggleClass('opened');
+    });
+
+    $('#predictionDetails').click(function() {
+        $('#predictionDetails img').toggleClass('arrow-rotate-bottom');
+        
+        $('#predictionBox').toggleClass('opened');
+    });
+
+    $('#chatDetails').click(function() {
+        $('#chatDetails img').toggleClass('arrow-rotate-bottom');
+        
+        $('#chatBox').toggleClass('opened');
+    });
 });
