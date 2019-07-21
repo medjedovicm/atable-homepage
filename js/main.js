@@ -4,7 +4,6 @@
 //     });
 // });
 
-
 $(document).ready(function() {
 
     let innerWidth = window.innerWidth;
@@ -19,6 +18,9 @@ $(document).ready(function() {
     } else {
         $('#topSection').addClass('top-section');
     }
+
+    $('.loading-screen').fadeOut();
+    $('body').removeClass('overflow-hidden');
 
     $('#menuToggle').click(function() {
         $('.header').toggleClass('open');
